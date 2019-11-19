@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B46E3D372382BC8A006C7F3B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46E3D362382BC8A006C7F3B /* main.swift */; };
+		B46E3D372382BC8A006C7F3B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46E3D362382BC8A006C7F3B /* main.swift */; settings = {COMPILER_FLAGS = "-w"; }; };
+		B46E3D3E2382BCA1006C7F3B /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46E3D3D2382BCA1006C7F3B /* Animal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		B46E3D332382BC8A006C7F3B /* CallByRefOrByVal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CallByRefOrByVal; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46E3D362382BC8A006C7F3B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B46E3D3D2382BCA1006C7F3B /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				B46E3D362382BC8A006C7F3B /* main.swift */,
+				B46E3D3D2382BCA1006C7F3B /* Animal.swift */,
 			);
 			path = CallByRefOrByVal;
 			sourceTree = "<group>";
@@ -119,6 +122,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B46E3D3E2382BCA1006C7F3B /* Animal.swift in Sources */,
 				B46E3D372382BC8A006C7F3B /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +248,7 @@
 		B46E3D3B2382BC8A006C7F3B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_CONSTANT_CONVERSION = NO;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -253,6 +258,7 @@
 		B46E3D3C2382BC8A006C7F3B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_CONSTANT_CONVERSION = NO;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
