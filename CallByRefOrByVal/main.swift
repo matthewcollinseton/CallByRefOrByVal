@@ -16,14 +16,28 @@ func feedDog(dog: Dog) {
 func feedCat(cat: Cat) {
     var myCat = cat
     myCat.eat() //reduces cats hunger level by 1
+    print("myCat hunger is: \(myCat.hunger)")
 }
 
 //hunger levels start at 10 for cats and dogs
 let fido = Dog(name: "Fido", colour: "Black")
 feedDog(dog: fido)
-print(fido.hunger)
+print("Fido's Hunger Level is at: \(fido.hunger)")
 
 let felix = Cat(name: "Felix", colour: "Brown")
 feedCat(cat: felix)
-print(felix.hunger)
+print("Felix's Hunger Level is at: \(felix.hunger)")
+
+
+
+
+
+
+
+
+
+
+//CLUE: (don't show this initially)
+//feedDog uses Call by Reference
+//feedCat uses Call by Value
 
